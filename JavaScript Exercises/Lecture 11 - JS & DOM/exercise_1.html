@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu đăng nhập</title>
+    <style>
+        /* Định dạng cho biểu mẫu */
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        /* Định dạng cho các thành phần của biểu mẫu */
+        label, input, .remember {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Định dạng cho thông báo lỗi */
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đăng nhập</h1>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label class="remember">
+            <input type="checkbox" id="remember" name="remember"> Ghi nhớ đăng nhập
+        </label>
+
+        <input type="submit" value="Đăng nhập">
+    </form>
+
+    <p class="error-message" id="errorMessage"></p>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Kiểm tra tính hợp lệ của tên đăng nhập và mật khẩu
+            // Nếu tên đăng nhập ngắn hơn 4 ký tự và mật khẩu ngắn hơn 6 ký tự thì không hợp lệ
+            
+            // Thêm các kiểm tra khác tùy theo yêu cầu của bạn
+
+            return true; // Cho phép submit nếu thông tin hợp lệ
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Example</title>
+</head>
+<body>
+    <h1>Danh sách môn học</h1>
+    
+    <!-- Tạo một ô nhập để tìm kiếm -->
+    <input type="text" id="searchInput" placeholder="Nhập tên môn học">
+    
+    <ul id="courseList">
+        <!-- Danh sách môn học -->
+        <li><strong>Math:</strong> Toán học cơ bản.</li>
+        <li><strong>Science:</strong> Khoa học tự nhiên.</li>
+        <li><strong>History:</strong> Lịch sử thế giới.</li>
+        <li><strong>English:</strong> Tiếng Anh cơ bản.</li>
+    </ul>
+
+    <script>
+        // Lấy tham chiếu đến các phần tử HTML
+        var searchInput = document.getElementById('searchInput');
+        var courseList = document.getElementById('courseList').getElementsByTagName('li');
+
+        // Thêm sự kiện 'input' để tìm kiếm môn học
+        searchInput.addEventListener('input', function () {
+            var searchTerm = searchInput.value.toLowerCase();
+
+            for (var i = 0; i < courseList.length; i++) {
+                var course = courseList[i];
+                var courseText = course.textContent.toLowerCase();
+
+                // Kiểm tra xem môn học có chứa từ khóa tìm kiếm không
+                if (courseText.includes(searchTerm)) {
+                    course.style.display = 'block'; // Hiển thị môn học nếu tìm thấy
+                } else {
+                    course.style.display = 'none'; // Ẩn môn học nếu không tìm thấy
+                }
+            }
+        });
+    </script>
+</body>
+</html>

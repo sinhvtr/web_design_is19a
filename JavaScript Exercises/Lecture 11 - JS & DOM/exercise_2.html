@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Sinh viên</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Danh sách Sinh viên</h1>
+    
+    <!-- Ô tìm kiếm -->
+    <input type="text" id="searchInput" placeholder="Nhập tên hoặc mã sinh viên">
+
+    <!-- Bảng sinh viên -->
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Họ và tên</th>
+                <th>Mã sinh viên</th>
+                <th>Ngày sinh</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>S12345</td>
+                <td>01/01/1995</td>
+                <td>van.a@example.com</td>
+                <td>0123 456 789</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>S67890</td>
+                <td>15/07/1998</td>
+                <td>thi.b@example.com</td>
+                <td>0987 654 321</td>
+            </tr>
+            <!-- Thêm thông tin sinh viên khác ở đây -->
+        </tbody>
+    </table>
+
+    <script>
+        var searchInput = document. ;
+        var studentTable = document.  ;
+        var studentRows = studentTable.  ;
+
+        // Lắng nghe sự kiện 'input' trên ô tìm kiếm
+        searchInput.addEventListener('input', function () {
+            var searchTerm = searchInput.value.toLowerCase();
+
+            // Duyệt qua từng hàng trong bảng
+            for (var i = 1; i < studentRows.length; i++) { // Bắt đầu từ i = 1 để tránh hàng tiêu đề
+                
+            }
+        });
+    </script>
+</body>
+</html>

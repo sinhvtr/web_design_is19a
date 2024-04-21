@@ -1,0 +1,224 @@
+/**Footer**/
+.footer {
+    font-family: "Roboto", sans-serif, arial !important;
+    font-size: 16px;
+    line-height: 1.7;
+    display: flex;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: solid 1px #a0a0a0;
+    margin: 10px 0px;
+    background-color:rgba(231, 224, 199, 0.5);
+    margin-bottom: -50px;
+}
+.footer-info {
+    align-items: center;
+}
+.content-footer {
+    list-style-type: none;
+}
+.title-content {
+    color: black;
+    font-weight: 700;
+} 
+
+.content-footer li {
+    margin-bottom: 10px;
+}
+
+.other-sites ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+}
+.other-sites ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sub-footer {
+    border-top: solid 1px #9a9a9a;
+    padding: 10px 20px 80px 20px;
+    color: #757575;
+    padding-top: 30px;
+   padding-bottom: 30px;
+   position: absolute;
+  top: 50%;
+  height: 100px;
+  margin-top: 150px;
+}
+.sub-footer a{
+    font-size: 50px;
+
+}
+
+#scroll-top {
+    float: right;
+    font-size: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .tietkiem{
+    color: red; 
+  }
+  .tablelable{
+
+  }
+  .product__thongtin {
+    padding-top: 15px;
+}
+/* Trang chi tiết */
+.variations-tableInfo tr:first-child td {
+    border-top: 0px;
+}
+
+.variations-tableInfo tr td {
+    border-top: 1px solid #e7e7e7;
+    padding: 8px 0px !important;
+}
+.table-value {
+    vertical-align: top;
+    padding: 5px 0px;
+    line-height: 20px;
+}
+
+.variations-tableInfo .table-label {
+    width: 110px;
+    vertical-align: top;
+    padding: 5px 0px;
+    line-height: 20px;
+}
+.variations-tableInfo .list-color {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+.box-vote {
+    padding: 5px 0px;
+}
+td.table-label{
+    text-align: left; 
+}
+td.table-value{
+    text-align: left;
+}
+div.grid-container{
+    
+}
+/* h3{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: .15em;
+    color:rgba(0, 0, 0, 0.5)
+} */
+.product__nut {
+    padding-top: 15px;
+}
+.product__nut .btn.is--red {
+    background: #df1f26;
+    border-color: #df1f26;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.product__nut .btn {
+    border: 1px solid #e7e7e7;
+    padding: 9px;
+    min-width: 40px;
+    min-height: 40px;
+    text-align: center;
+    font-family: 'UTM Avo', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.btn {
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 20px;
+    cursor: pointer;
+}
+.product__nut .btn.is--blue {
+    background: #0090fd;
+    border-color: #0090fd;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.buy-cart-input .box-qty .quantity {
+    width: 60px !important;
+    border: 0px;
+    padding: 0px;
+    height: 38px;
+    text-align: center;
+    font-size: 15px;
+    background: #fff;
+}
+input#buyQuantity.quantity{
+    border: 1px solid brown; 
+    padding: 0px;
+}
+.pr-top-product {
+    padding: 7px 10px 2px 10px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    background: #f1f1f1;
+}
+.pr-txtb-product {
+    padding-left: 10px;
+    font-size: 13px;
+    margin: 0;   
+    position: absolute;
+    bottom: 5px;
+    height: 20px;
+    left: 40px;
+}
+.img__promo {
+    display:block;
+    width: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.pr-content-product {
+    padding: 5px 10px 7px 10px;
+    max-height: 245px;
+    overflow: hidden;
+    position: relative;
+}
+.pr-content-product div{
+    font-size: 12px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.pr-content-product a {
+    color: #0090fd;
+}
+    
+    
+
