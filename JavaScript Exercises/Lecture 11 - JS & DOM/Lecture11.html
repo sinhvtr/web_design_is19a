@@ -150,7 +150,7 @@
         
         <div class="container">
             <div class="title__center">
-                <!-- SẢN PHẨM BÁN CHẠY  -->
+                <!-- SẢN PHẨM HOT  -->
                 <a class="item__title" href="https://nguyenthu57.w3spaces.com/"> 
                 <h2>SẢN PHẨM HOT </h2>
                 </a>
@@ -467,16 +467,21 @@
       // alert(allSpans.length);
       // Bỏ comment ở câu lệnh dưới đây để in ra nội dung bên trong của thẻ div đầu tiên
       // alert(allSpans[0].innerHTML);
+
+      // Câu 1:
+      allPrices = document.getElementsByClassName('item__price');
+      alert(allPrices.length);
+      alert(allPrices[allPrices.length-1].innerHTML);
       
       /*
       Bài tập:
-      1. Tìm tất cả thẻ div chứa đoạn text thể hiện giá sản phẩm, có bao nhiêu thẻ như vậy
-      2. In ra nội dung bên trong thẻ div cuối cùng tìm được
-      3. Tìm tất cả thẻ ul trong trang web này, in ra số lượng thẻ tìm được
+      1. Tìm tất cả phần tử div chứa đoạn text thể hiện giá sản phẩm, có bao nhiêu phần tử như vậy
+      2. In ra nội dung bên trong phần tử div cuối cùng tìm được
+      3. Tìm tất cả phần tử ul trong trang web này, in ra số lượng phần tử tìm được
       
       
-      4. Tìm đến thẻ chứa dòng chữ Giỏ hàng, đổi dòng chữ này thành Cart
-      5. Tìm đến thẻ chứa hình ảnh sản phẩm đầu tiên trên trang chủ, đổi hình ảnh thành 1 ảnh khác bất kỳ
+      4. Tìm đến phần tử chứa dòng chữ Giỏ hàng, đổi dòng chữ này thành Cart
+      5. Tìm đến phần tử chứa hình ảnh sản phẩm đầu tiên trên trang chủ, đổi hình ảnh thành 1 ảnh khác bất kỳ
 
 
       6. Chuyển tất cả giá sản phẩm thành chữ màu xanh blue, in đậm
